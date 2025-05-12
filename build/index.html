@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/output.css" rel="stylesheet">
+    <title>MOP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .scrolled {
+        background-color: rgba(255, 255, 255, 0.6); /* glassy white */
+        backdrop-filter: blur(10px); /* blur effect */
+        -webkit-backdrop-filter: blur(10px); /* Safari support */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* optional shadow */
+      }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="h-screen w-full overflow-hidden relative">
+        <!-- NAVBAR -->
+        <nav id="navbar" class="fixed top-0 left-0 w-full flex items-center justify-between px-6 py-2 z-50 text-[#0C5672] transition-all duration-300 bg-transparent">
+          <!-- LOGO -->
+          <div class="flex items-center">
+            <img src="assets/img/logo.png" alt="Logo" class="w-20" />
+            <p class="leading-3.5 font-medium">MANDIRI <br> OCEAN <br> PROSPERITY</p>
+          </div>
+      
+          <!-- MENU -->
+          <ul class="flex space-x-6 font-semibold">
+            <li><a href="#tentang" class="hover:underline">Tentang</a></li>
+            <li><a href="#visi" class="hover:underline">Visi & Misi</a></li>
+            <li><a href="#layanan" class="hover:underline">Layanan</a></li>
+            <li><a href="#unggul" class="hover:underline">Keunggulan</a></li>
+            <li><a href="#kontak" class="hover:underline">Kontak</a></li>
+          </ul>
+        </nav>
+      
+        <!-- VIDEO BACKGROUND -->
+        <video
+          class="absolute top-1/2 left-1/2 w-auto min-w-full min-h-full -translate-x-1/2 -translate-y-1/2 object-cover object-center"
+          src="assets/img/hero.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+        ></video>
+      
+        <!-- OVERLAY TEXT -->
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
+          <div class="-mt-24">
+            <h1 data-aos="zoom-in" class="text-2xl md:text-5xl font-extrabold drop-shadow-lg">
+              PT. MANDIRI OCEAN PROSPERITY
+            </h1>
+            <p data-aos="zoom-in" class="mt-4 text-xl md:text-2xl italic font-light drop-shadow-md">
+              "Solusi Bongkar Muat Andal dan Profesional"
+            </p>
+          </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-white z-10"></div>
+    </div>
+    
+    
+    <div id="tentang" data-aos="fade-right" class="px-20 mt-24 gap-x-10 w-full flex items-center mb-16">
+      <div class="w-1/2 bg-[#d8c36dd7] relative overflow-visible rounded-lg">
+        <div class="relative -left-4 -top-4 z-10">
+          <img src="assets/img/serv6.jpg" alt="Servis" class="rounded-lg shadow-lg" />
+        </div>
+      </div>
+      <div class="w-1/2">
+        <div class="flex items-center gap-x-4 mb-1">
+          <p class="font-medium inline-block text-[#DDC153] text-lg ">TENTANG KAMI</p>
+          <div class="h-0.5 w-16 bg-[#DDC153]"></div>
+        </div>
+        <div class="mb-6">
+          <p class="text-3xl font-medium text-[#0C5672]">PT. MANDIRI OCEAN PROSPERITY</p>
+        </div>
+        <div class="">
+          <p class="mb-6 text-[#333333]"><span class="font-medium">PT. Mandiri Ocean Prosperity (PT. MOP)</span> adalah perusahaan lokal yang didirikan untuk mendukung kegiatan logistik kelautan, khususnya dalam bidang jasa bongkar muat (stevedoring) di pelabuhan-pelabuhan Manokwari dan sekitarnya.</p>
+          <p class="text-[#333333]">Kami hadir dengan misi mempermudah alur distribusi barang melalui sistem kerja yang profesional, efisien, dan berbasis keselamatan kerja.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="overflow-hidden mx-16 shadow-xl mb-24 rounded-lg p-4 bg-gray-50">
+        <div data-aos="zoom-in" class="flex justify-center items-center gap-x-4 mb-6 pt-3">
+          <div class="h-0.5 w-16 bg-[#DDC153]"></div>
+          <p class="font-medium inline-block text-[#DDC153] text-xl">NILAI-NILAI KAMI</p>
+          <div class="h-0.5 w-16 bg-[#DDC153]"></div>
+        </div>
+        <div class="flex justify-center gap-x-12 pb-3">
+          <div data-aos="flip-left" class="flex flex-col items-center">
+            <svg class="h-16 mb-2" fill="#0C5672" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M96 128a128 128 0 1 0 256 0A128 128 0 1 0 96 128zm94.5 200.2l18.6 31L175.8 483.1l-36-146.9c-2-8.1-9.8-13.4-17.9-11.3C51.9 342.4 0 405.8 0 481.3c0 17 13.8 30.7 30.7 30.7l131.7 0c0 0 0 0 .1 0l5.5 0 112 0 5.5 0c0 0 0 0 .1 0l131.7 0c17 0 30.7-13.8 30.7-30.7c0-75.5-51.9-138.9-121.9-156.4c-8.1-2-15.9 3.3-17.9 11.3l-36 146.9L238.9 359.2l18.6-31c6.4-10.7-1.3-24.2-13.7-24.2L224 304l-19.7 0c-12.4 0-20.1 13.6-13.7 24.2z"/></svg>
+            <p class="text-[#0C5672]">Profesionalisme</p>
+          </div>
+          <div data-aos="flip-left" class="flex flex-col items-center">
+            <svg class="h-16 mb-2" fill="#0C5672" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M335.5 4l288 160c15.4 8.6 21 28.1 12.4 43.5s-28.1 21-43.5 12.4L320 68.6 47.5 220c-15.4 8.6-34.9 3-43.5-12.4s-3-34.9 12.4-43.5L304.5 4c9.7-5.4 21.4-5.4 31.1 0zM320 160a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM144 256a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm312 40a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM226.9 491.4L200 441.5l0 38.5c0 17.7-14.3 32-32 32l-48 0c-17.7 0-32-14.3-32-32l0-38.5L61.1 491.4c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l37.9-70.3c15.3-28.5 45.1-46.3 77.5-46.3l19.5 0c16.3 0 31.9 4.5 45.4 12.6l33.6-62.3c15.3-28.5 45.1-46.3 77.5-46.3l19.5 0c32.4 0 62.1 17.8 77.5 46.3l33.6 62.3c13.5-8.1 29.1-12.6 45.4-12.6l19.5 0c32.4 0 62.1 17.8 77.5 46.3l37.9 70.3c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8L552 441.5l0 38.5c0 17.7-14.3 32-32 32l-48 0c-17.7 0-32-14.3-32-32l0-38.5-26.9 49.9c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l36.3-67.5c-1.7-1.7-3.2-3.6-4.3-5.8L376 345.5l0 54.5c0 17.7-14.3 32-32 32l-48 0c-17.7 0-32-14.3-32-32l0-54.5-26.9 49.9c-1.2 2.2-2.6 4.1-4.3 5.8l36.3 67.5c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8z"/></svg>
+            <p class="text-[#0C5672]">Tanggung Jawab Sosial</p>
+          </div>
+          <div data-aos="flip-left" class="flex flex-col items-center">
+            <svg class="h-16 mb-2" fill="#0C5672" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0c4.6 0 9.2 1 13.4 2.9L457.7 82.8c22 9.3 38.4 31 38.3 57.2c-.5 99.2-41.3 280.7-213.6 363.2c-16.7 8-36.1 8-52.8 0C57.3 420.7 16.5 239.2 16 140c-.1-26.2 16.3-47.9 38.3-57.2L242.7 2.9C246.8 1 251.4 0 256 0zm0 66.8l0 378.1C394 378 431.1 230.1 432 141.4L256 66.8s0 0 0 0z"/></svg>
+            <p class="text-[#0C5672]">Keamanan Kerja</p>
+          </div>
+          <div data-aos="flip-left" class="flex flex-col items-center">
+            <svg class="h-16 mb-2" fill="#0C5672" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M323.4 85.2l-96.8 78.4c-16.1 13-19.2 36.4-7 53.1c12.9 17.8 38 21.3 55.3 7.8l99.3-77.2c7-5.4 17-4.2 22.5 2.8s4.2 17-2.8 22.5l-20.9 16.2L512 316.8 512 128l-.7 0-3.9-2.5L434.8 79c-15.3-9.8-33.2-15-51.4-15c-21.8 0-43 7.5-60 21.2zm22.8 124.4l-51.7 40.2C263 274.4 217.3 268 193.7 235.6c-22.2-30.5-16.6-73.1 12.7-96.8l83.2-67.3c-11.6-4.9-24.1-7.4-36.8-7.4C234 64 215.7 69.6 200 80l-72 48 0 224 28.2 0 91.4 83.4c19.6 17.9 49.9 16.5 67.8-3.1c5.5-6.1 9.2-13.2 11.1-20.6l17 15.6c19.5 17.9 49.9 16.6 67.8-2.9c4.5-4.9 7.8-10.6 9.9-16.5c19.4 13 45.8 10.3 62.1-7.5c17.9-19.5 16.6-49.9-2.9-67.8l-134.2-123zM16 128c-8.8 0-16 7.2-16 16L0 352c0 17.7 14.3 32 32 32l32 0c17.7 0 32-14.3 32-32l0-224-80 0zM48 320a16 16 0 1 1 0 32 16 16 0 1 1 0-32zM544 128l0 224c0 17.7 14.3 32 32 32l32 0c17.7 0 32-14.3 32-32l0-208c0-8.8-7.2-16-16-16l-80 0zm32 208a16 16 0 1 1 32 0 16 16 0 1 1 -32 0z"/></svg>
+            <p class="text-[#0C5672]">Kepercayaan Pelanggan</p>
+          </div>
+        </div>
+    </div>
+
+    <div id="visi" class="overflow-hidden relative bg-fixed bg-center bg-cover bg-no-repeat" style="background-image: url('assets/img/img4.jpg');">
+      <!-- Overlay gelap -->
+      <div class="absolute inset-0 bg-[#165C71]/80 z-0"></div>
+
+      <!-- Konten di atas overlay -->
+      <div class="relative z-10 text-white py-14 px-16">
+        <div data-aos="zoom-in" class="flex justify-center items-center gap-x-4 mb-6">
+          <div class="h-0.5 w-16 bg-[#DDC153]"></div>
+          <p class="font-medium inline-block text-[#DDC153] text-xl">VISI & MISI</p>
+          <div class="h-0.5 w-16 bg-[#DDC153]"></div>
+        </div>
+        <div class="mb-6">
+          <p data-aos="zoom-in" class="text-white text-center italic">"Menjadi perusahaan bongkar muat terdepan di Papua Barat yang mengedepankan efisiensi, keselamatan, dan kepuasan pelanggan."</p>
+        </div>
+        <div>
+          <div class="grid grid-cols-2 gap-4 w-full">
+            <div data-aos="fade-right" class="bg-[#789A63] py-4 px-6 rounded-full text-black flex items-center gap-x-4">
+              <div class="bg-blue-950 font-bold text-2xl text-white px-4 py-2 rounded-full">1</div>
+              <div class="text-white">Menyediakan layanan bongkar muat yang cepat dan aman</div>
+            </div>
+            <div data-aos="fade-left" class="bg-[#789A63] py-4 px-6 rounded-full text-black flex items-center gap-x-4">
+              <div class="bg-blue-950 font-bold text-2xl text-white px-4 py-2 rounded-full">2</div>
+              <div class="text-white">Meningkatkan kapasitas tenaga kerja lokal</div>
+            </div>
+            <div data-aos="fade-right" class="bg-[#789A63] py-4 px-6 rounded-full text-black flex items-center gap-x-4">
+              <div class="bg-blue-950 font-bold text-2xl text-white px-4 py-2 rounded-full">3</div>
+              <div class="text-white">Membangun kemitraan jangka panjang dengan pelaku usaha pelabuhan</div>
+            </div>
+            <div data-aos="fade-left" class="bg-[#789A63] py-4 px-6 rounded-full text-black flex items-center gap-x-4">
+              <div class="bg-blue-950 font-bold text-2xl text-white px-4 py-2 rounded-full">4</div>
+              <div class="text-white">Mengadopsi teknologi untuk efisiensi operasional</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="layanan" class="overflow-hidden mb-20">
+      <div data-aos="zoom-in" class="flex justify-center items-center gap-x-4 mt-16 ">
+          <div class="h-0.5 w-16 bg-[#DDC153]"></div>
+          <p class="font-medium inline-block text-[#DDC153] text-xl">LAYANAN KAMI</p>
+          <div class="h-0.5 w-16 bg-[#DDC153]"></div>
+      </div>
+      <p data-aos="zoom-in" class="text-center mt-4 mb-6">Kami menyediakan layanan lengkap untuk kegiatan <span class="font-bold">bongkar muat barang</span> dari dan ke kapal, termasuk:</p>
+      <div class="grid grid-cols-3 gap-4 px-16">
+        <div data-aos="fade-up" class="relative group rounded-lg px-4 text-sm gap-x-2 overflow-hidden bg-gray-100 flex items-center border-b-4 border-[#789A63] transition-all duration-300">
+          <!-- background overlay animasi -->
+          <div class="absolute inset-0 bg-[#789A63] scale-y-0 origin-bottom transition-transform duration-300 group-hover:scale-y-100 z-0"></div>
+
+          <!-- icon -->
+          <span class="bg-[#789A63] p-1 rounded-full z-10 transition-all duration-300 group-hover:bg-white">
+            <svg class="h-4 w-4 transition-colors duration-300 group-hover:fill-[#789A63]" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
+            </svg>
+          </span>
+
+          <!-- text -->
+          <div class="text-center py-7 z-10 text-black transition-colors duration-300 group-hover:text-white">
+            Barang curah kering (tepung terigu, semen, dll.)
+          </div>
+        </div>
+
+        <div data-aos="fade-up" class="relative group rounded-lg px-4 text-sm gap-x-2 overflow-hidden bg-gray-100 flex items-center border-b-4 border-[#5D8FA2] transition-all duration-300">
+          <!-- background overlay animasi -->
+          <div class="absolute inset-0 bg-[#5D8FA2] scale-y-0 origin-bottom transition-transform duration-300 group-hover:scale-y-100 z-0"></div>
+
+          <!-- icon -->
+          <span class="bg-[#5D8FA2] p-1 rounded-full z-10 transition-all duration-300 group-hover:bg-white">
+            <svg class="h-4 w-4 transition-colors duration-300 group-hover:fill-[#5D8FA2]" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
+            </svg>
+          </span>
+
+          <!-- text -->
+          <div class="text-center py-7 z-10 text-black transition-colors duration-300 group-hover:text-white">
+            Barang curah padat (batubara, biji besi, dll.)
+          </div>
+        </div>
+
+        <div data-aos="fade-up" class="relative group rounded-lg px-4 text-sm gap-x-2 overflow-hidden bg-gray-100 flex items-center border-b-4 border-[#DDC153] transition-all duration-300">
+          <!-- background overlay animasi -->
+          <div class="absolute inset-0 bg-[#DDC153] scale-y-0 origin-bottom transition-transform duration-300 group-hover:scale-y-100 z-0"></div>
+
+          <!-- icon -->
+          <span class="bg-[#DDC153] p-1 rounded-full z-10 transition-all duration-300 group-hover:bg-white">
+            <svg class="h-4 w-4 transition-colors duration-300 group-hover:fill-[#DDC153]" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
+            </svg>
+          </span>
+
+          <!-- text -->
+          <div class="text-center py-7 z-10 text-black transition-colors duration-300 group-hover:text-white">
+            Barang curah cair (minyak mentah, solar, dll.)
+          </div>
+        </div>
+
+        <div data-aos="fade-up" class="relative group rounded-lg px-4 text-sm gap-x-2 overflow-hidden bg-gray-100 flex items-center border-b-4 border-[#5D8FA2] transition-all duration-300">
+          <!-- background overlay animasi -->
+          <div class="absolute inset-0 bg-[#5D8FA2] scale-y-0 origin-bottom transition-transform duration-300 group-hover:scale-y-100 z-0"></div>
+
+          <!-- icon -->
+          <span class="bg-[#5D8FA2] p-1 rounded-full z-10 transition-all duration-300 group-hover:bg-white">
+            <svg class="h-4 w-4 transition-colors duration-300 group-hover:fill-[#5D8FA2]" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
+            </svg>
+          </span>
+
+          <!-- text -->
+          <div class="text-center py-7 z-10 text-black transition-colors duration-300 group-hover:text-white">
+            Barang proyek
+          </div>
+        </div>
+
+        <div data-aos="fade-up" class="relative group rounded-lg px-4 text-sm gap-x-2 overflow-hidden bg-gray-100 flex items-center border-b-4 border-[#DDC153] transition-all duration-300">
+          <!-- background overlay animasi -->
+          <div class="absolute inset-0 bg-[#DDC153] scale-y-0 origin-bottom transition-transform duration-300 group-hover:scale-y-100 z-0"></div>
+
+          <!-- icon -->
+          <span class="bg-[#DDC153] p-1 rounded-full z-10 transition-all duration-300 group-hover:bg-white">
+            <svg class="h-4 w-4 transition-colors duration-300 group-hover:fill-[#DDC153]" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
+            </svg>
+          </span>
+
+          <!-- text -->
+          <div class="text-center py-7 z-10 text-black transition-colors duration-300 group-hover:text-white">
+            Penanganan kontainer
+          </div>
+        </div>
+
+        <div data-aos="fade-up" class="relative group rounded-lg px-4 text-sm gap-x-2 overflow-hidden bg-gray-100 flex items-center border-b-4 border-[#789A63] transition-all duration-300">
+          <!-- background overlay animasi -->
+          <div class="absolute inset-0 bg-[#789A63] scale-y-0 origin-bottom transition-transform duration-300 group-hover:scale-y-100 z-0"></div>
+
+          <!-- icon -->
+          <span class="bg-[#789A63] p-1 rounded-full z-10 transition-all duration-300 group-hover:bg-white">
+            <svg class="h-4 w-4 transition-colors duration-300 group-hover:fill-[#789A63]" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
+            </svg>
+          </span>
+
+          <!-- text -->
+          <div class="text-center py-7 z-10 text-black transition-colors duration-300 group-hover:text-white">
+            Penyusunan dan pemindahan barang di dermaga
+          </div>
+        </div>
+
+        <div data-aos="fade-up" class="relative group col-span-3 justify-center rounded-lg px-4 text-sm gap-x-2 overflow-hidden bg-gray-100 flex items-center border-b-4 border-[#5D8FA2] transition-all duration-300">
+          <!-- background overlay animasi -->
+          <div class="absolute inset-0 bg-[#5D8FA2] scale-y-0 origin-bottom transition-transform duration-300 group-hover:scale-y-100 z-0"></div>
+
+          <!-- icon -->
+          <span class="bg-[#5D8FA2] p-1 rounded-full z-10 transition-all duration-300 group-hover:bg-white">
+            <svg class="h-4 w-4 transition-colors duration-300 group-hover:fill-[#5D8FA2]" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
+            </svg>
+          </span>
+
+          <!-- text -->
+          <div class="text-center py-7 z-10 text-black transition-colors duration-300 group-hover:text-white">
+            Koordinasi dengan pihak pelabuhan dan otoritas setempat
+          </div>
+        </div>
+      </div>
+      <p data-aos="fade-up" class="text-center my-6">Didukung oleh <span class="font-bold">alat berat</span> dan <span class="font-bold">tenaga kerja bersertifikasi</span>, kami memastikan pekerjaan dilakukan <span class="font-bold">sesuai standar keselamatan</span>.</p>
+    </div>
+
+    <div id="unggul" class="bg-[#f5cd60cc] overflow-hidden p-16">
+        <div data-aos="zoom-in" class="flex justify-center items-center gap-x-4">
+          <div class="h-0.5 w-16 bg-[#0C5672]"></div>
+          <p class="font-medium inline-block text-[#0C5672] text-lg">KEUNGGULAN KAMI</p>
+          <div class="h-0.5 w-16 bg-[#0C5672]"></div>
+        </div>
+        <div data-aos="zoom-in" class="mb-10 mt-2">
+          <p class="text-3xl font-medium text-[#0C5672] text-center">Kenapa Harus Memilih PT.MOP?</p>
+        </div>
+        <div class="flex flex-col gap-y-7">
+          
+          <div data-aos="fade-right" class="bg-white shadow flex w-full rounded-lg overflow-hidden group transition-transform duration-800 ease-in-out hover:shadow-lg">
+            <div
+              class="w-1/2 h-48 bg-center bg-cover bg-no-repeat transition-transform duration-500 ease-in-out group-hover:scale-110"
+              style="
+                background-image: url('assets/img/serv8.jpg');
+                clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
+              "
+            ></div>
+            <div class="w-1/2 p-4 flex flex-col justify-center">
+              <p class="font-semibold text-2xl mb-3 text-[#0C5672]">Tenaga Kerja Terlatih</p>
+              <p class="text-[#333333]">SDM lokal bersertifikasi dan berpengalaman</p>
+            </div>
+          </div>
+
+          <!-- Card 1 -->
+          <div data-aos="fade-left" class="bg-white flex w-full rounded-lg overflow-hidden self-end group transition-transform duration-800 ease-in-out hover:shadow-lg">
+            <div class="w-1/2 p-4 flex flex-col justify-center">
+              <p class="font-semibold text-2xl mb-3 text-[#0C5672]">Respons Cepat</p>
+              <p class="text-[#333333]">Koordinasi cepat untuk efisiensi waktu sandar kapal</p>
+            </div>
+            <div
+              class="w-1/2 h-48 bg-center bg-cover bg-no-repeat transition-transform duration-500 ease-in-out group-hover:scale-110"
+              style="
+                background-image: url('assets/img/serv2.jpg');
+                clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+              "
+            ></div>
+          </div>
+
+          <!-- Card 2 -->
+          <div data-aos="fade-right" class="bg-white shadow flex w-full rounded-lg overflow-hidden group transition-transform duration-800 ease-in-out hover:shadow-lg">
+            <div
+              class="w-1/2 h-48 bg-center bg-cover bg-no-repeat transition-transform duration-500 ease-in-out group-hover:scale-110"
+              style="
+                background-image: url('assets/img/serv3.jpg');
+                clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
+              "
+            ></div>
+            <div class="w-1/2 p-4 flex flex-col justify-center">
+              <p class="font-semibold text-2xl mb-3 text-[#0C5672]">Peralatan Lengkap</p>
+              <p class="text-[#333333]">Crane, forklift, dan peralatan pelabuhan lainnya</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div data-aos="fade-left" class="bg-white flex w-full rounded-lg overflow-hidden self-end group transition-transform duration-800 ease-in-out hover:shadow-lg">
+            <div class="w-1/2 p-4 flex flex-col justify-center">
+              <p class="font-semibold text-2xl mb-3 text-[#0C5672]">Kepatuhan Regulasi</p>
+              <p class="text-[#333333]">Operasional sesuai aturan pelabuhan dan keselamatan kerja</p>
+            </div>
+            <div
+              class="w-1/2 h-48 bg-center bg-cover bg-no-repeat transition-transform duration-500 ease-in-out group-hover:scale-110"
+              style="
+                background-image: url('assets/img/serv4.jpg');
+                clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+              "
+            ></div>
+          </div>
+
+          <!-- Card 4 -->
+          <div data-aos="fade-right" class="bg-white shadow flex w-full rounded-lg overflow-hidden group transition-transform duration-800 ease-in-out hover:shadow-lg">
+            <div
+              class="w-1/2 h-48 bg-center bg-cover bg-no-repeat transition-transform duration-500 ease-in-out group-hover:scale-110"
+              style="
+                background-image: url('assets/img/serv5.jpg');
+                clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
+              "
+            ></div>
+            <div class="w-1/2 p-4 flex flex-col justify-center">
+              <p class="font-semibold text-2xl mb-3 text-[#0C5672]">Rekam Jejak Baik</p>
+              <p class="text-[#333333]">Telah dipercaya oleh berbagai perusahaan logistik dan pelayaran</p>
+            </div>
+          </div>
+
+        </div>
+    </div>
+
+    <div id="kontak" class="py-16 px-16 bg-[#0C5672] text-white">
+        <div data-aos="zoom-in" class="flex justify-center items-center gap-x-4 mb-6">
+          <div class="h-0.5 w-16 bg-[#F3C851]"></div>
+          <p class="font-medium inline-block text-[#F3C851] text-2xl">KONTAK KAMI</p>
+          <div class="h-0.5 w-16 bg-[#F3C851]"></div>
+        </div>
+      <div data-aos="zoom-in" class="flex gap-x-12 justify-center items-center">
+        <div>
+          <div class="flex items-center mb-3">
+            <img src="assets/img/logo-white.png" alt="Logo" class="w-32" />
+            <p class="leading-4.5 font-medium">MANDIRI <br> OCEAN <br> PROSPERITY</p>
+          </div>
+          <p class="font-semibold text-lg">PT. Mandiri Ocean Prosperity</p>
+        </div>
+        <div>
+          <div class="flex gap-x-3 mb-2">
+            <img src="assets/img/phone.svg" alt="">
+            <a href="https://wa.me/6281248596529" target="_blank">0812 4859 6529</a>
+          </div>
+          <div class="flex gap-x-3 mb-2">
+            <img src="assets/img/instagram.svg" alt="">
+            <a href="https://instagram.com/pt.mop.official" target="_blank">@pt.mop.official</a>
+          </div>
+          <div class="flex gap-x-3 mb-2">
+            <img src="assets/img/map-pin.svg" alt="">
+            <span>Jl. Sankoifeda RT 01 / RW 10, Amban, <br> Manokwari - Papua Barat</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.addEventListener('scroll', function () {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 50) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+    </script>
+
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+
+  </body>
+</html>
